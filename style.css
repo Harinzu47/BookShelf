@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat+Alternates&family=Quicksand:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #3F8EFC;
+    padding: 5px;
+    color: #87BFFF;
+    text-shadow: 2px 2px 0px #333333, 5px 4px 0px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.background {
+    background-color: #ADD7F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 60%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container .container-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background: #87BFFF;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 6px #3F8EFC;
+}
+
+.container h2 {
+    color: #3F8EFC;
+    text-align: center;
+}
+
+.input input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.input label,
+.search-container form label {
+    color: #3F8EFC;
+    font-weight: bold;
+}
+
+.input-check-box {
+    margin-bottom: 5px;
+}
+
+.input-check-box label {
+    color: #3F8EFC;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.input-submit input {
+    background-color: #3F8EFC;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    border: 0;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    background: #87BFFF;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 6px #3F8EFC;
+}
+
+
+.search-container form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+
+}
+
+.search-container form label {
+    display: flex;
+    align-items: center;
+}
+
+.search-container form #cari-judul-buku {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-container form #tombol-cari{
+    background-color: #3F8EFC;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+}
+
+.container-rak {
+    margin-top: 10px;
+    background: #87BFFF;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 6px #3F8EFC;
+}
+
+.buku {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 7px 10px -3px rgba(13,103,143,0.79);
+    -webkit-box-shadow: 5px 7px 10px -3px rgba(13,103,143,0.79);
+    -moz-box-shadow: 5px 7px 10px -3px rgba(13,103,143,0.79);
+}
+
+.tombol-complete {
+    background: url(assets/check-circle-svgrepo-com.svg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.tombol-complete:hover {
+    background: url(assets/check-circle-svgrepo-com2.svg);
+    background-size: contain;
+}
+
+.tombol-delete {
+    background: url(assets/trash-xmark-alt-svgrepo-com.svg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.tombol-delete:hover {
+    background: url(assets/trash-xmark-alt-svgrepo-com-2.svg);
+    background-size: contain;
+}
+
+.tombol-undo {
+    background: url(assets/undo-svgrepo-com.svg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.tombol-undo:hover {
+    background: url(assets/undo-svgrepo-com-2.svg);
+    background-size: contain;
+}
+
+.tombol-edit {
+    background: url(assets/edit-3-svgrepo-com.svg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.tombol-edit:hover {
+    background: url(assets/edit-3-svgrepo-com-2.svg);
+    background-size: contain;
+}
+
+
+@media (max-width: 768px) {
+    .background {
+        align-items: flex-start; 
+    }
+
+    .container {
+        width: 100%; 
+    }
+
+    .container .container-form,
+    .search-container {
+        width: 100%; 
+    }
+    
+    .search-container form {
+        grid-template-columns: 1fr; 
+    }
+
+    .tombol-complete,
+    .tombol-delete,
+    .tombol-undo {
+        width: 30px; 
+        height: 30px; 
+    }
+
+  
+    .search-container form {
+        grid-template-columns: 1fr; 
+    }
+
+    .search-container form label,
+    .search-container form #cari-judul-buku,
+    .search-container form #tombol-cari {
+        width: 100%; 
+    }
+}
+

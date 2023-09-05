@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rak Buku Khalid</title>
+</head>
+<body>
+    <header>
+        <h1>Rak Buku Khalid</h1>
+    </header>
+    <div class="background">
+        <div class="container">
+            <div class="container-form">
+                <h2>Masukan Buku Baru</h2>
+                <form action="#" class="form" id="form">
+                    <div class="input">
+                        <label for="nama">Nama Buku:</label><br>
+                        <input type="text" id="judul-buku" name="judul" placeholder="Nama Buku" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="penulis">Penulis Buku:</label><br>
+                        <input type="text" id="penulis-buku" name="penulis" placeholder="Penulis Buku" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="tahun">Tahun Buku:</label><br>
+                        <input type="number" id="tahun-buku" name="tahun" placeholder="Tahun Buku" required><br>
+                    </div>
+                    <div class="input-check-box">
+                        <label>Selesai Dibaca</label><input type="checkbox" id="sudah-selesai"><br>
+                    </div>
+                    <div class="input-submit">
+                        <input type="submit" value="Tambah ke Rak" name="submit" class="button-submit">
+                    </div>  
+                </form> 
+            </div>   
+        <div class="search-container">
+            <h2>Cari Buku</h2>
+            <form id="form-pencarian">
+                    <label for="cari-judul-buku">Judul:</label>
+                    <input type="text" id="cari-judul-buku" name="judul-buku">
+                    <input type="submit" id="tombol-cari" value="Search">
+            </form>
+        </div>    
+        <div class="container-rak">
+            <h2>Belum Selesai Dibaca</h2>
+            <div id="bukuBelumSelesai"></div>
+        </div>
+        <div class="container-rak">
+            <h2>Selesai Dibaca</h2>
+            <div id="bukuSudahSelesai"></div>
+        </div>   
+        </div>      
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
